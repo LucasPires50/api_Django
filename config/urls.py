@@ -19,7 +19,7 @@ from estoque.views import EstoqueViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register(r'estoque', EstoqueViewSet)
+router.register(r'estoque', EstoqueViewSet, basename='Produtos')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
